@@ -6,7 +6,7 @@ A Blender add-on for quickly generating expression meshes for Smash Ultimate usi
 Designed for use with Blender 3.0, may be compatible with future releases
 
 ## Installation
-1. Click the green Code button and select Download ZIP. Don't unzip the file.
+1. Click releases, navigate to the latest version, download the release, (top file not the source code) Don't unzip the file.
 2. Install the .ZIP in Blender under `Edit > Preferences > Addons > Install`
 3. Make sure the addon is enabled by searching for "Expression".
 4. After installing the plugin in blender, in the 3D Viewport pull up the Sidebar (Hotkey is 'N'), and look for 'Ultimate' tab in the Sidebar
