@@ -65,9 +65,9 @@ class MyProperties(bpy.types.PropertyGroup):
     clean_enum : bpy.props.EnumProperty(
         name= "",
         description= "Choose the desired cleanup option",
-        items= [('1', "Full Clean", "Remove all vertex groups after mesh creation"),
-                ('2', "Partial Clean", "Remove vertex groups that aren't basis and target"),
-                ('0', "No Clean", "Do not delete any vertex group")
+        items= [('1', "Full Clean", "Remove all shape keys after mesh creation"),
+                ('2', "Partial Clean", "Remove shape keys that aren't basis and target"),
+                ('0', "No Clean", "Do not delete any shape keys")
         ]
     )
 
@@ -325,9 +325,10 @@ class ExpressionMaker():
     def single(self, s_selected):
         self.v_print("SINGLE EXPRESSION SPLIT: Single Selected Mesh: "+s_selected.name)
         bpy.context.view_layer.objects.active=s_selected
-        self.duplicate(bpy.context.object)
         
         key_type=self.type_decider(bpy.context.object.active_shape_key.name)
+        if(key_type!=1):
+            self.duplicate(bpy.context.object)
         
         if key_type=='mouth':
             if self.smooth_mode==1:
