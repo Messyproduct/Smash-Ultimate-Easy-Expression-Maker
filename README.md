@@ -1,4 +1,4 @@
-# Super Smash Bros Ultimate Expression Maker
+# Super Smash Bros Ultimate Easy Expression Maker
 [![wiki](https://img.shields.io/badge/wiki-guide-success)](https://github.com/Messyproduct/Smash-Ultimate-Expression-Maker/wiki)
 
 A Blender add-on for quickly generating expression meshes for Smash Ultimate using shape keys
