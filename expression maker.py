@@ -301,7 +301,7 @@ class ExpressionMaker():
                 self.remove_all_shapekeys(0)
                 
                 bpy.ops.object.select_all(action='DESELECT')
-                bpy.data.objects[main_mesh.name].select = True
+                bpy.data.objects[main_mesh.name].select_set(True)
                 bpy.context.view_layer.objects.active = main_mesh
                 bpy.context.object.active_shape_key_index = main_shape
                 
@@ -373,7 +373,7 @@ class ExpressionMaker():
         self.change_mode('OBJECT')
 
         bpy.ops.object.select_all(action='DESELECT')
-        bpy.data.objects[s_selected.name].select = True
+        bpy.data.objects[s_selected.name].select_set(True)
         bpy.context.view_layer.objects.active = s_selected
         self.v_print("SINGLE EXPRESSION SPLIT: Single Selected Mesh: "+s_selected.name)
     

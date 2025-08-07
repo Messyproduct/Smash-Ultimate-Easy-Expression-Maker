@@ -3,11 +3,11 @@
 
 A Blender add-on for quickly generating expression meshes for Smash Ultimate using shape keys
 
-Designed for use with Blender 3.0, may be compatible with future releases
+Designed for use with Blender 4.4, may be compatible with future releases
 
 ## Installation
-1. Click releases, navigate to the latest version, download the top file (not the source code), Don't unzip the file.
-2. Install the .ZIP in Blender under `Edit > Preferences > Addons > Install`
+1. Click releases, navigate to the latest version, download the top file (not the source code), make sure the .py file is unzipped.
+2. Install the .py in Blender under `Edit > Preferences > Addons > Install`
 3. Make sure the addon is enabled by searching for "Expression".
 4. After installing the plugin in blender, in the 3D Viewport pull up the Sidebar (Hotkey is 'N'), and look for 'Ultimate' tab in the Sidebar
 
